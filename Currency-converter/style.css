@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(227, 145, 227);
+}
+
+.wrapper {
+    width: 370px;
+    background-color: plum;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    border: 1px solid #999;
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid pink;
+}
+
+/* Updated Drop-List Styling */
+form .drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .from, .drop-list .to {
+    width: 45%;
+}
+
+.drop-list .from p, .drop-list .to p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.select-box {
+    display: flex;
+    height: 45px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.select-box select {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    appearance: none; /* Remove default dropdown arrow */
+}
+
+.select-box select:focus {
+    outline: none;
+}
+
+.drop-list .icon {
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.drop-list .icon:hover {
+    transform: rotate(180deg);
+}
+
+/* Exchange rate display */
+form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+
+/* Submit Button Styling */
+form button {
+    height: 52px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    background: palevioletred;
+    border-radius: 5px;
+    border: none;
+}
+
+form button:hover {
+    background-color: #d16080;
+    transition: background-color 0.3s ease;
+}
